@@ -72,7 +72,7 @@ public class ParkirController {
 
                 case 9:
                     berjalan = false;
-                    view.pesan("Program selesai.");
+                    view.pesan("Terima kasih!");
                     break;
 
                 default:
@@ -90,10 +90,7 @@ public class ParkirController {
         );
         
         String jenis = view.inputJenisKendaraan();
-        String merk = view.inputTidakKosong(
-                "Merk: "
-        );
-
+        String merk = view.inputMerk();
         String warna = view.inputTidakKosong(
                 "Warna: "
         );

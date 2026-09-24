@@ -53,6 +53,21 @@ public class ParkirView {
         }
     }
     
+    public String inputMerk() {
+    while (true) {
+        System.out.print("Merk: ");
+        String merk = input.nextLine().trim();
+
+        if (merk.isEmpty()) {
+            System.out.println("Merk tidak boleh kosong!");
+        } else if (!merk.matches(".*[a-zA-Z].*")) {
+            System.out.println("Merk harus mengandung huruf!");
+        } else {
+            return merk;
+        }
+    }
+}
+    
     public String inputJenisKendaraan() {
         while (true) {
             String jenis = inputTidakKosong(
@@ -145,7 +160,7 @@ public class ParkirView {
             System.out.println("|   [8]  Cari Data Parkir                           |");
             System.out.println("|   [9]  Keluar                                     |");
             System.out.println("|                                                   |");
-            System.out.println("-----------------------------------------------------");
+            System.out.println("-----------------------------------------------------");    
     }
     
     // Tampil Data

@@ -68,6 +68,21 @@ public class ParkirView {
     }
 }
     
+    public String inputWarna() {
+    while (true) {
+        System.out.print("Warna: ");
+        String warna = input.nextLine().trim();
+
+        if (warna.isEmpty()) {
+            System.out.println("Warna tidak boleh kosong!");
+        } else if (!warna.matches("[a-zA-Z ]+")) {
+            System.out.println("Warna hanya boleh berisi huruf!");
+        } else {
+            return warna;
+        }
+    }
+}
+    
     public String inputJenisKendaraan() {
         while (true) {
             String jenis = inputTidakKosong(

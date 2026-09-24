@@ -91,10 +91,8 @@ public class ParkirController {
         
         String jenis = view.inputJenisKendaraan();
         String merk = view.inputMerk();
-        String warna = view.inputTidakKosong(
-                "Warna: "
-        );
-        
+        String warna = view.inputWarna();
+       
         Kendaraan kendaraan;
 
         if (jenis.equalsIgnoreCase("Motor")) {

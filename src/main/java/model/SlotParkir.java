@@ -33,6 +33,12 @@ public class SlotParkir {
     public String getStatusSlot() {
         return statusSlot;
     }
+    public void setNomorSlot(String nomorSlot) {
+        this.nomorSlot = nomorSlot;
+    }
+    public void setJenisSlot(String jenisSlot) {
+        this.jenisSlot = jenisSlot;
+    }
     public void setStatusSlot(String statusSlot) {
         this.statusSlot = statusSlot;
     }

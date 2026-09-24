@@ -63,6 +63,18 @@ public class Parkir {
     public String getStatusPembayaran() {
         return statusPembayaran;
     }
+    public void setKendaraan(Kendaraan kendaraan) {
+        this.kendaraan = kendaraan;
+    }
+    public void setPetugas(Petugas petugas) {
+        this.petugas = petugas;
+    }
+    public void setSlot(SlotParkir slot) {
+        this.slot = slot;
+    }
+    public void setWaktuMasuk(String waktuMasuk) {
+        this.waktuMasuk = waktuMasuk;
+    }
     public void setWaktuKeluar(String waktuKeluar) {
         this.waktuKeluar = waktuKeluar;
     }

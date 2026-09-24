@@ -38,6 +38,18 @@ public class Petugas {
     public String getShift() {
         return shift;
     }
+    public void setNamaPetugas(String namaPetugas) {
+        this.namaPetugas = namaPetugas;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public void setShift(String shift) {
+        this.shift = shift;
+    }
     public void tampilkanInfo() {
         System.out.println("ID Petugas   : " + idPetugas);
         System.out.println("Nama Petugas : " + namaPetugas);
